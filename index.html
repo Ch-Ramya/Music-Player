@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+  <div class="music-card-wrapper">
+    <!--top bar in music player card-->
+    <div class="nav-bar">
+      <i class="material-icons music-logo-icon more-music">expand_more</i>
+      <span class="now-playing">Now Playing</span>
+      <i class="material-icons music-more-horiz">more_horiz</i>
+    </div>
+
+    <!-- Image Area  -->
+     <div class="image-area">
+         <img src="images/pushpa.png" alt="">
+     </div>
+
+      <!-- Details of the playing Song Information  -->
+      <div class="song-details">
+          <p class="song-name">Dakko Dakko Meka</p>
+          <p class="artist-details"> Shivam</p>
+      </div>
+
+      <!-- Song progress bar  -->
+      <div class="progress-area">
+          <div class="progress-bar"></div>
+
+          <!-- Song timings  -->
+          <div class="song-duration">
+              <span class="current-time">0.20</span>
+              <span class="total-song-duration">3.20</span>
+          </div>
+          <audio class="song-audio" src=""></audio>
+      </div>
+
+      <!-- Music Player Controls -->
+      <div class="music-player-controls">
+          <i class="material-icons repeat-playlist" title="Playlist looped">repeat</i>
+          <i class="material-icons prev-song-control">skip_previous</i>
+          <div class="play-pause-container">
+              <i class="material-icons play-pause-control">play_arrow</i>
+          </div>
+          <i class="material-icons next-song-control">skip_next</i>
+          <i class="material-icons more-music-control">queue_music</i>
+      </div>
+
+      <!-- Music list -->
+      <div class="music-list">
+          <div class="music-list-header">
+              <div class="music-list-nav-bar">
+                  <i class="material-icons">queue_music</i>
+                  <span>Music List</span>
+              </div>
+                    <i class="material-icons close-icon">close</i>
+          </div>
+          <ul class="music-list-ul">
+          </ul>
+      </div>
+  </div>
+
+  <script src="Js/musicList.js"></script>
+  <script src="Js/main.js"></script>
+
+</body>
+</html>
